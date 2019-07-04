@@ -26,10 +26,13 @@
   "scripts": {
     "precommit": "yarn lint",
     "lint": "eslint src/**.js",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "expo": "^29.0.0"
+    "expo": "^29.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.0",
@@ -55,5 +58,6 @@
     "react": "*",
     "react-native": "*",
     "react-native-vector-icons": "*"
-  }
+  },
+  "snyk": true
 }
