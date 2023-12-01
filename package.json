@@ -29,7 +29,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "expo": "^29.0.0"
+    "expo": "^33.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.0",
